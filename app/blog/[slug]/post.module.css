@@ -1,0 +1,223 @@
+.hero {
+  background: linear-gradient(135deg, #0F2A44, #1a3d5c);
+  padding: 8rem 1.5rem 4rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb a { color: rgba(255,255,255,0.65); text-decoration: none; }
+.breadcrumb a:hover { color: #FFC107; }
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.catBadge {
+  background: rgba(255,193,7,0.2);
+  border: 1px solid rgba(255,193,7,0.4);
+  color: #FFC107;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.date, .readTime {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.85rem;
+}
+
+.title {
+  color: #fff;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+.excerpt {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 700px;
+}
+
+/* Content */
+.content {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.intro {
+  font-size: 1.05rem;
+  color: #4A5568;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  border-left: 4px solid #FFC107;
+  padding-left: 1.25rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0F2A44;
+  margin-bottom: 0.75rem;
+}
+
+.section p {
+  color: #4A5568;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* FAQ in post */
+.faqSection {
+  margin: 2.5rem 0;
+  padding: 2rem;
+  background: #F5F7FA;
+  border-radius: 16px;
+}
+
+.faqSection h2 {
+  font-size: 1.4rem;
+  color: #0F2A44;
+  margin-bottom: 1.25rem;
+}
+
+.faqItem {
+  border: 1px solid #E1E5EB;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.faqItem[open] { border-color: #FFC107; }
+
+.faqQ {
+  list-style: none;
+  padding: 1rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0F2A44;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.faqQ::-webkit-details-marker { display: none; }
+
+.faqPlus {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #FFC107;
+  flex-shrink: 0;
+}
+
+.faqItem[open] .faqPlus { transform: rotate(45deg); }
+
+.faqA { padding: 0.25rem 1.25rem 1rem; }
+.faqA p { font-size: 0.9rem; color: #4A5568; line-height: 1.7; margin: 0; }
+
+/* CTA Box */
+.ctaBox {
+  background: linear-gradient(135deg, #0F2A44, #1a3d5c);
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+  margin: 2.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ctaBox h3 { color: #fff; font-size: 1.4rem; margin: 0; }
+.ctaBox p { color: rgba(255,255,255,0.7); margin: 0; font-size: 0.95rem; }
+
+/* Related */
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.relatedCard {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(15,42,68,0.07);
+  border: 2px solid transparent;
+  transition: all 0.25s;
+}
+
+.relatedCard:hover {
+  border-color: #FFC107;
+  transform: translateY(-4px);
+}
+
+.relatedImage {
+  height: 120px;
+  background: linear-gradient(135deg, #0F2A44, #1a3d5c);
+}
+
+.relatedBody {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.relatedCat {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #FFC107;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.relatedBody h3 {
+  font-size: 0.95rem;
+  color: #0F2A44;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.relatedBody p {
+  font-size: 0.82rem;
+  color: #7B8794;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.relatedRead {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #FFC107;
+}
+
+@media (max-width: 768px) {
+  .relatedGrid { grid-template-columns: 1fr; }
+}

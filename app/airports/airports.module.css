@@ -1,0 +1,206 @@
+.hero {
+  background: linear-gradient(135deg, #0F2A44 0%, #1a3d5c 100%);
+  padding: 8rem 1.5rem 5rem;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.heroContent h1 {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+}
+
+.heroContent p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0;
+}
+
+.heroContent .btn-group {
+  justify-content: center;
+}
+
+.whyStrip {
+  background: linear-gradient(90deg, #FFC107, #FFA000);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+}
+
+.whyItem {
+  padding: 0.9rem 1.5rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #0F2A44;
+  border-right: 1px solid rgba(15,42,68,0.15);
+  white-space: nowrap;
+}
+
+.whyItem:last-child { border-right: none; }
+
+.airportGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.airportCard {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(15,42,68,0.08);
+  border: 2px solid transparent;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: all 0.3s;
+}
+
+.airportCard:hover {
+  border-color: #FFC107;
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(15,42,68,0.14);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.airportCode {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #0F2A44;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #0F2A44 0%, #3FA9F5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ratingBadge {
+  background: rgba(255,193,7,0.15);
+  color: #F59E0B;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+}
+
+.airportName {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0F2A44;
+  margin: 0;
+}
+
+.airportLocation {
+  font-size: 0.83rem;
+  color: #7B8794;
+  margin: 0;
+}
+
+.airportDesc {
+  font-size: 0.87rem;
+  color: #4A5568;
+  line-height: 1.55;
+  margin: 0;
+  flex: 1;
+}
+
+.terminals {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.termLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #7B8794;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.termBadge {
+  background: #F5F7FA;
+  border: 1px solid #E1E5EB;
+  color: #0F2A44;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+}
+
+.popularRoutes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.routeLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #7B8794;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.routeList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.routeItem {
+  font-size: 0.83rem;
+  color: #4A5568;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  border-top: 1px solid #F0F0F0;
+}
+
+.priceFrom {
+  font-size: 0.88rem;
+  color: #7B8794;
+}
+
+.priceFrom strong {
+  color: #0F2A44;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.bookBtn {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #FFC107;
+}
+
+@media (max-width: 1024px) {
+  .airportGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .airportGrid { grid-template-columns: 1fr; }
+  .whyItem { padding: 0.75rem 1rem; font-size: 0.82rem; }
+}

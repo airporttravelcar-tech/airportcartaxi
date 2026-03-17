@@ -1,0 +1,236 @@
+.hero {
+  background: linear-gradient(135deg, #0F2A44 0%, #0d2235 60%, #132a42 100%);
+  padding: 8rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(63,169,245,0.1) 0%, transparent 60%);
+}
+
+.heroInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+  position: relative;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.breadcrumb {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.breadcrumb a {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover { color: #FFC107; }
+
+.airportBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255,193,7,0.12);
+  border: 1px solid rgba(255,193,7,0.25);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.88rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.airportCode {
+  background: #FFC107;
+  color: #0F2A44;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+}
+
+.heroContent h1 {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.heroContent p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.trustRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.trustTag {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.8);
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border-radius: 50px;
+}
+
+.heroForm { display: flex; flex-direction: column; }
+
+/* Price Table */
+.priceTable {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(15,42,68,0.08);
+  border: 1px solid #E1E5EB;
+}
+
+.priceTableHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #0F2A44;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.priceRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  align-items: center;
+  border-bottom: 1px solid #F0F4F8;
+  font-size: 0.9rem;
+  color: #4A5568;
+  transition: background 0.15s;
+}
+
+.priceRow:last-child { border-bottom: none; }
+.priceRow:hover { background: #F9FAFB; }
+
+.destination {
+  font-weight: 600;
+  color: #0F2A44;
+}
+
+.price {
+  color: #0F2A44;
+  font-size: 1.1rem;
+}
+
+.priceNote {
+  margin-top: 1rem;
+  font-size: 0.82rem;
+  color: #7B8794;
+  font-style: italic;
+}
+
+/* Features */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.featureCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: 0 2px 12px rgba(15,42,68,0.06);
+  border: 2px solid transparent;
+  transition: all 0.25s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.featureCard:hover {
+  border-color: #FFC107;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(15,42,68,0.1);
+}
+
+.featureIcon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.featureCard h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0F2A44;
+  margin: 0;
+}
+
+.featureCard p {
+  font-size: 0.87rem;
+  color: #4A5568;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Bottom CTA */
+.bottomCta {
+  background: linear-gradient(135deg, #FFC107, #FFA000);
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.bottomCta h2 {
+  color: #0F2A44;
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.bottomCta p {
+  color: rgba(15,42,68,0.75);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .heroInner { grid-template-columns: 1fr; }
+  .heroContent { text-align: center; align-items: center; }
+  .priceTableHeader, .priceRow { grid-template-columns: 1fr 1fr 1fr auto; }
+  .priceTableHeader span:nth-child(3), .priceRow span:nth-child(3) { display: none; }
+  .featuresGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .priceTableHeader { grid-template-columns: 1fr auto auto; }
+  .priceTableHeader span:nth-child(2), .priceRow span:nth-child(2) { display: none; }
+  .priceRow { grid-template-columns: 1fr auto auto; }
+  .featuresGrid { grid-template-columns: 1fr; }
+}

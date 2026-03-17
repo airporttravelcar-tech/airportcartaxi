@@ -1,0 +1,145 @@
+.hero {
+  background: linear-gradient(135deg, #0F2A44, #1a3d5c);
+  padding: 8rem 1.5rem 5rem;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.heroContent h1 { color: #fff; font-weight: 900; margin: 0; }
+.heroContent p { color: rgba(255,255,255,0.75); font-size: 1.1rem; line-height: 1.7; margin: 0; max-width: 620px; }
+
+/* Stats */
+.statsSection {
+  background: #FFC107;
+  padding: 2.5rem 1.5rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.35rem;
+}
+
+.statValue {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #0F2A44;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: rgba(15,42,68,0.7);
+  font-weight: 600;
+}
+
+/* Story */
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.storyContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.storyContent h2 {
+  font-weight: 800;
+  color: #0F2A44;
+  margin: 0;
+}
+
+.storyContent p {
+  color: #4A5568;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.storyVisual {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.visualCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(15,42,68,0.08);
+  border-left: 4px solid #FFC107;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.visualIcon { font-size: 1.8rem; line-height: 1; flex-shrink: 0; }
+
+.visualText { display: flex; flex-direction: column; gap: 0.3rem; }
+.visualText strong { color: #0F2A44; font-size: 0.95rem; font-weight: 700; }
+.visualText p { font-size: 0.87rem; color: #4A5568; margin: 0; line-height: 1.5; }
+
+/* Values */
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.valueCard {
+  background: #fff;
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(15,42,68,0.07);
+  border: 2px solid transparent;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+  align-items: center;
+}
+
+.valueCard:hover { border-color: #FFC107; transform: translateY(-5px); }
+
+.valueIcon { font-size: 2.5rem; }
+
+.valueCard h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0F2A44;
+  margin: 0;
+}
+
+.valueCard p { font-size: 0.87rem; color: #4A5568; line-height: 1.6; margin: 0; }
+
+@media (max-width: 1024px) {
+  .storyGrid { grid-template-columns: 1fr; }
+  .statsGrid { grid-template-columns: repeat(2, 1fr); }
+  .valuesGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .statsGrid { grid-template-columns: repeat(2, 1fr); }
+  .valuesGrid { grid-template-columns: 1fr; }
+}

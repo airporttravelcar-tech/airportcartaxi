@@ -1,0 +1,152 @@
+.hero {
+  background: linear-gradient(135deg, #0F2A44 0%, #1a3d5c 100%);
+  padding: 8rem 0 4rem;
+}
+
+.heroInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.breadcrumb {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.breadcrumb a { color: rgba(255,255,255,0.65); text-decoration: none; transition: color 0.2s; }
+.breadcrumb a:hover { color: #FFC107; }
+
+.heroContent h1 {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.heroContent p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.routeStats {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 140px;
+}
+
+.statIcon { font-size: 1.5rem; line-height: 1; }
+
+.stat div { display: flex; flex-direction: column; }
+.stat strong { color: #FFC107; font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 700; }
+.stat span { color: rgba(255,255,255,0.55); font-size: 0.75rem; }
+
+.heroForm { display: flex; flex-direction: column; }
+
+/* Info Grid */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.infoCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(15,42,68,0.08);
+  border: 2px solid transparent;
+  transition: all 0.25s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.infoCard:hover { border-color: #FFC107; transform: translateY(-4px); }
+
+.infoIcon { font-size: 2rem; }
+
+.infoCard h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0F2A44;
+  margin: 0;
+}
+
+.infoCard p { font-size: 0.9rem; color: #4A5568; line-height: 1.6; margin: 0; }
+
+/* Trust Grid */
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.trustCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: 0 2px 12px rgba(15,42,68,0.06);
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: all 0.25s;
+}
+
+.trustCard:hover { border-color: #FFC107; transform: translateY(-4px); }
+
+.trustIcon { font-size: 2rem; }
+.trustCard h3 { font-size: 0.95rem; font-weight: 700; color: #0F2A44; margin: 0; }
+.trustCard p { font-size: 0.85rem; color: #4A5568; line-height: 1.5; margin: 0; }
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, #FFC107, #FFA000);
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.cta h2 { color: #0F2A44; font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 0.75rem; }
+.cta p { color: rgba(15,42,68,0.75); margin-bottom: 2rem; }
+
+@media (max-width: 1024px) {
+  .heroInner { grid-template-columns: 1fr; }
+  .heroContent { text-align: center; align-items: center; }
+  .infoGrid { grid-template-columns: 1fr; }
+  .trustGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .trustGrid { grid-template-columns: 1fr; }
+  .routeStats { flex-direction: column; }
+}

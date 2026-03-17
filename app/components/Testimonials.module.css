@@ -1,0 +1,196 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 18px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  position: relative;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255, 193, 7, 0.4);
+  transform: translateY(-4px);
+}
+
+.quoteIcon {
+  position: absolute;
+  top: -0.5rem;
+  right: 1.5rem;
+  font-size: 5rem;
+  line-height: 1;
+  color: rgba(255, 193, 7, 0.15);
+  font-family: Georgia, serif;
+  pointer-events: none;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.starFilled {
+  color: #FFC107;
+  font-size: 1rem;
+}
+
+.starEmpty {
+  color: rgba(255,255,255,0.2);
+  font-size: 1rem;
+}
+
+.text {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+  font-style: italic;
+}
+
+.authorRow {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FFC107, #FFA000);
+  color: #0F2A44;
+  font-weight: 800;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.authorName {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.authorService {
+  color: #FFC107;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.authorLocation {
+  color: rgba(255,255,255,0.5);
+  font-size: 0.75rem;
+}
+
+/* Rating Banner */
+.ratingBanner {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 18px;
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ratingScore {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bigRating {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #FFC107;
+  line-height: 1;
+}
+
+.ratingDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.ratingCount {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.85rem;
+}
+
+.ratingDivider {
+  width: 1px;
+  height: 60px;
+  background: rgba(255,255,255,0.15);
+}
+
+.platformBadges {
+  display: flex;
+  gap: 2rem;
+}
+
+.platformBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.platformIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #4285F4;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.platformName {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.85rem;
+}
+
+.platformRating {
+  color: #FFC107;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+  .ratingBanner { flex-direction: column; text-align: center; }
+  .ratingDivider { width: 80px; height: 1px; }
+  .platformBadges { flex-direction: column; align-items: center; }
+}

@@ -1,0 +1,138 @@
+.hero {
+  background: linear-gradient(135deg, #0F2A44, #1a3d5c);
+  padding: 8rem 1.5rem 4rem;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.heroContent h1 { color: #fff; font-weight: 900; margin: 0; }
+.heroContent p { color: rgba(255,255,255,0.75); font-size: 1.05rem; margin: 0; }
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.contactCard {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 20px rgba(15,42,68,0.08);
+  border: 2px solid transparent;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  transition: all 0.3s;
+}
+
+.contactCard:hover {
+  border-color: #FFC107;
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(15,42,68,0.13);
+}
+
+.contactIcon {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contactCard h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0F2A44;
+  margin: 0;
+}
+
+.contactCard p {
+  font-size: 0.9rem;
+  color: #7B8794;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contactValue {
+  color: #0F2A44;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.contactCta {
+  color: #FFC107;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+/* Form */
+.contactForm {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(15,42,68,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Airport Links */
+.airportLinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.airportLink {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #fff;
+  border: 2px solid #F0F4F8;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0F2A44;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.airportLink:hover {
+  border-color: #FFC107;
+  background: #FFFBEB;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .contactGrid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+  .airportLinks { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .formRow { grid-template-columns: 1fr; }
+  .airportLinks { grid-template-columns: 1fr; }
+  .contactForm { padding: 1.5rem; }
+}

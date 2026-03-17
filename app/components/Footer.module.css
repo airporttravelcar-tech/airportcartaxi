@@ -1,0 +1,318 @@
+.footer {
+  background: #0a1e32;
+  color: rgba(255,255,255,0.8);
+}
+
+/* CTA Banner */
+.ctaBanner {
+  background: linear-gradient(135deg, #FFC107 0%, #FFA000 100%);
+  padding: 3rem 1.5rem;
+}
+
+.ctaInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.ctaTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #0F2A44;
+  margin: 0 0 0.4rem;
+}
+
+.ctaSubtext {
+  color: rgba(15,42,68,0.75);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ctaButtons .btn--secondary {
+  border-color: #0F2A44;
+  color: #0F2A44;
+}
+
+.ctaButtons .btn--secondary:hover {
+  background: #0F2A44;
+  color: #fff;
+}
+
+/* Main Footer */
+.footerMain {
+  padding: 4rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+/* Brand Column */
+.brandCol {}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+}
+
+.logoMain {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.logoSub {
+  display: block;
+  font-size: 0.65rem;
+  color: #FFC107;
+  font-weight: 500;
+}
+
+.brandDesc {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 1.5rem;
+}
+
+.trustBadgeRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.trustBadgeItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.rating {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FFC107;
+}
+
+.ratingLabel {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255,255,255,0.1);
+}
+
+.socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.socialBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.8);
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: all 0.2s;
+}
+
+.socialBtn:hover {
+  background: #FFC107;
+  color: #0F2A44;
+  border-color: #FFC107;
+}
+
+/* Link Columns */
+.linkCol {}
+
+.colTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #FFC107;
+  margin-bottom: 1rem;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footerLink {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: all 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footerLink::before {
+  content: '→';
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: all 0.2s;
+  color: #FFC107;
+  font-size: 0.8rem;
+}
+
+.footerLink:hover {
+  color: #fff;
+  padding-left: 0.5rem;
+}
+
+.footerLink:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Contact */
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contactItem:hover {
+  color: #fff;
+}
+
+/* Bottom Bar */
+.footerBottom {
+  padding: 1.25rem 1.5rem;
+  background: rgba(0,0,0,0.2);
+}
+
+.bottomInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  color: rgba(255,255,255,0.4);
+  font-size: 0.83rem;
+  margin: 0;
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.bottomLink {
+  color: rgba(255,255,255,0.4);
+  font-size: 0.83rem;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.bottomLink:hover { color: rgba(255,255,255,0.7); }
+
+.paymentBadges {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.payBadge {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.5);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .brandCol {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+  }
+  .ctaInner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ctaButtons {
+    justify-content: center;
+    width: 100%;
+  }
+  .bottomInner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bottomLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

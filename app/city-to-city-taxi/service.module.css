@@ -1,0 +1,67 @@
+/* Shared service page styles */
+.hero {
+  background: linear-gradient(135deg, #0F2A44, #1a3d5c);
+  padding: 8rem 1.5rem 5rem;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.heroContent h1 { color: #fff; font-weight: 900; margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
+.heroContent p { color: rgba(255,255,255,0.75); font-size: 1.1rem; line-height: 1.7; margin: 0; }
+
+/* Route Table */
+.routeTable {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(15,42,68,0.08);
+  border: 1px solid #E1E5EB;
+}
+
+.routeHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1fr auto;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #0F2A44;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.routeRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1fr auto;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  align-items: center;
+  border-bottom: 1px solid #F0F4F8;
+  font-size: 0.9rem;
+  color: #4A5568;
+  transition: background 0.15s;
+}
+
+.routeRow:last-child { border-bottom: none; }
+.routeRow:hover { background: #F9FAFB; }
+
+.route {
+  font-weight: 700;
+  color: #0F2A44;
+}
+
+@media (max-width: 768px) {
+  .routeHeader { grid-template-columns: 1fr 1fr auto; }
+  .routeHeader span:nth-child(2), .routeHeader span:nth-child(3),
+  .routeRow span:nth-child(2), .routeRow span:nth-child(3) { display: none; }
+  .routeRow { grid-template-columns: 1fr 1fr auto; }
+}
