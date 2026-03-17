@@ -54,7 +54,7 @@ export default function GatwickAirportTaxiPage() {
             <p>Reliable, fixed-price taxi transfers to and from Gatwick Airport. Both North and South Terminals covered. Free flight tracking and meet & greet included.</p>
             <div className="btn-group">
               <Link href="/book-now/" className="btn btn--primary btn--lg" id="gatwick-book-now">Book Gatwick Taxi</Link>
-              <a href="tel:+447700900000" className="btn btn--secondary btn--lg">📞 Call Now</a>
+              
             </div>
             <div className={styles.trustRow}>
               {['✓ Both terminals', '✓ 60 min free wait', '✓ Flight tracking', '✓ Fixed price'].map(t => (
@@ -99,7 +99,7 @@ export default function GatwickAirportTaxiPage() {
               { icon: '👔', title: 'Meet & Greet', desc: 'Driver waiting in arrivals with your name board, ready to assist with luggage.' },
               { icon: '🚗', title: 'Premium Vehicles', desc: 'Modern saloons, executive cars, MPVs, and minibuses available.' },
               { icon: '🕐', title: '24/7 Available', desc: 'Serving Gatwick round the clock, 365 days a year.' },
-              { icon: '📞', title: 'Easy Contact', desc: 'Phone, WhatsApp, or online booking — all confirmed instantly.' },
+              { icon: '📞', title: 'Easy Contact', desc: 'Email or online booking — all confirmed instantly.' },
             ].map(f => (
               <div key={f.title} className={styles.featureCard}>
                 <span className={styles.featureIcon}>{f.icon}</span>

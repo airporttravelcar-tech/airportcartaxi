@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 const homepageFaqs = [
-  { q: 'How do I book an airport taxi with Airport Car Taxi?', a: 'You can book instantly using our online booking form, by phone at +44 7700 900000, or via WhatsApp. Fill in your pickup location, destination, date, time and vehicle preference to get an instant fixed quote.' },
+  { q: 'How do I book an airport taxi with Airport Car Taxi?', a: 'You can book instantly using our online booking form, or via email. Fill in your pickup location, destination, date, time and vehicle preference to get an instant fixed quote.' },
   { q: 'Are prices fixed, or do they go up in traffic?', a: 'All our prices are fully fixed. Once you receive your quote and confirm your booking, the price will never change — regardless of traffic, delays, or time of day.' },
   { q: 'Do you track flights for airport pickups?', a: 'Yes, we monitor all incoming flights in real time. If your flight is delayed, your driver will automatically adjust the pickup time at no extra charge.' },
   { q: 'What airports do you cover?', a: 'We cover all major UK airports including Heathrow, Gatwick, Manchester, Luton, Stansted, Birmingham, Edinburgh, Glasgow, Bristol, and more.' },
@@ -107,9 +107,7 @@ export default function HomePage() {
               <Link href="/book-now/" className="btn btn--primary btn--lg" id="hero-book-now">
                 🚖 Book My Taxi
               </Link>
-              <a href="tel:+447700900000" className="btn btn--secondary btn--lg" id="hero-call">
-                📞 Call Now
-              </a>
+              
             </div>
             {/* Trust Signals */}
             <div className={styles.heroTrust}>
@@ -208,7 +206,7 @@ export default function HomePage() {
             {[
               { step: '01', icon: '📝', title: 'Enter Your Journey', desc: 'Fill in your pickup location, destination, date, time and passenger count.' },
               { step: '02', icon: '💷', title: 'Get a Fixed Quote', desc: 'Receive an instant fixed price — no hidden charges and no meter.' },
-              { step: '03', icon: '✅', title: 'Confirm Your Booking', desc: 'Confirm online or via WhatsApp and receive instant email confirmation.' },
+              { step: '03', icon: '✅', title: 'Confirm Your Booking', desc: 'Confirm online or via email and receive instant email confirmation.' },
               { step: '04', icon: '🚖', title: 'Enjoy Your Ride', desc: 'Your driver arrives on time, tracks your flight if needed, and gets you there safely.' },
             ].map((s) => (
               <div key={s.step} className={styles.stepCard}>

@@ -5,7 +5,7 @@ import styles from './contact.module.css';
 
 export const metadata: Metadata = {
   title: 'Contact Us | Airport Car Taxi | 24/7 UK Airport Transfers',
-  description: 'Contact Airport Car Taxi for bookings, quotes, and enquiries. Phone, WhatsApp, and email support available 24/7. Professional UK airport taxi service.',
+  description: 'Contact Airport Car Taxi for bookings, quotes, and enquiries. Email support available 24/7. Professional UK airport taxi service.',
   alternates: { canonical: 'https://www.airportcartaxi.co.uk/contact-us/' },
 };
 
@@ -18,7 +18,7 @@ export default function ContactPage() {
           <div className={styles.heroContent}>
             <span className="badge badge--yellow">Get In Touch</span>
             <h1>Contact Airport Car Taxi</h1>
-            <p>We're available 24/7 for bookings, queries, and support. Call, WhatsApp, or email us — we're always here to help.</p>
+            <p>We're available 24/7 for bookings, queries, and support. Email us — we're always here to help.</p>
           </div>
         </div>
       </section>
@@ -27,20 +27,7 @@ export default function ContactPage() {
       <section className="section">
         <div className="container">
           <div className={styles.contactGrid}>
-            <a href={`tel:${COMPANY.phone}`} className={styles.contactCard} id="contact-phone">
-              <div className={styles.contactIcon} style={{ background: 'rgba(15,42,68,0.1)' }}>📞</div>
-              <h3>Phone</h3>
-              <p>Call us any time. Available 24/7 for bookings and support.</p>
-              <strong className={styles.contactValue}>{COMPANY.phone}</strong>
-              <span className={styles.contactCta}>Call Now →</span>
-            </a>
-            <a href={`https://wa.me/${COMPANY.whatsapp}?text=Hi, I'd like to enquire about a taxi booking.`} target="_blank" rel="noopener noreferrer" className={styles.contactCard} id="contact-whatsapp">
-              <div className={styles.contactIcon} style={{ background: 'rgba(37,211,102,0.1)' }}>💬</div>
-              <h3>WhatsApp</h3>
-              <p>Message us on WhatsApp for a quick booking or any questions.</p>
-              <strong className={styles.contactValue}>WhatsApp Us</strong>
-              <span className={styles.contactCta}>Chat Now →</span>
-            </a>
+
             <a href={`mailto:${COMPANY.email}`} className={styles.contactCard} id="contact-email">
               <div className={styles.contactIcon} style={{ background: 'rgba(63,169,245,0.1)' }}>✉️</div>
               <h3>Email</h3>

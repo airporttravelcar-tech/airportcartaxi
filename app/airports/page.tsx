@@ -35,7 +35,7 @@ export default function AirportsPage() {
           <p>Professional, fixed-price airport taxi transfers from every major UK airport. Your driver tracks your flight and adjusts for any delays — at no extra cost.</p>
           <div className="btn-group">
             <Link href="/book-now/" className="btn btn--primary btn--lg" id="airports-book-now">Book Airport Taxi</Link>
-            <a href="tel:+447700900000" className="btn btn--secondary btn--lg" id="airports-call">📞 Call Us</a>
+            
           </div>
         </div>
       </section>

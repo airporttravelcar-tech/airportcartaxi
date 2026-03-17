@@ -37,7 +37,7 @@ export default function WeddingTransportPage() {
             <p>Make your special day even more memorable with our professional wedding car hire service. Luxury vehicles, ribbon decorations, and experienced chauffeurs across the UK.</p>
             <div className="btn-group" style={{ justifyContent: 'center' }}>
               <Link href="/book-now/" className="btn btn--primary btn--lg" id="wedding-book-now">Book Wedding Car</Link>
-              <a href="tel:+447700900000" className="btn btn--secondary btn--lg">📞 Call Now</a>
+              
             </div>
           </div>
         </div>

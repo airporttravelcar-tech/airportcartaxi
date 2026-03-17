@@ -76,7 +76,7 @@ export default async function RoutePage({ params }: { params: Promise<Params> })
             </div>
             <div className="btn-group">
               <Link href="/book-now/" className="btn btn--primary btn--lg" id={`route-book-${routeSlug}`}>Book This Route</Link>
-              <a href="tel:+447700900000" className="btn btn--secondary btn--lg">📞 Call Now</a>
+              
             </div>
           </div>
           <div className={styles.heroForm}>

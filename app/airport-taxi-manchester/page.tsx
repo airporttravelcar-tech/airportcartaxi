@@ -49,7 +49,7 @@ export default function ManchesterAirportTaxiPage() {
             <p>Professional taxi transfers to and from Manchester Airport with fixed prices. All three terminals covered. Free flight tracking included.</p>
             <div className="btn-group">
               <Link href="/book-now/" className="btn btn--primary btn--lg" id="manchester-book-now">Book Manchester Taxi</Link>
-              <a href="tel:+447700900000" className="btn btn--secondary btn--lg">📞 Call Now</a>
+              
             </div>
             <div className={styles.trustRow}>
               {['✓ T1, T2, T3 covered', '✓ Free wait time', '✓ Flight tracking', '✓ Fixed price'].map(t => (

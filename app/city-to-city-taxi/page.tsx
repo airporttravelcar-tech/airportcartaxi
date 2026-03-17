@@ -38,7 +38,7 @@ export default function CityToCityPage() {
             <p>Comfortable, fixed-price taxi transfers between any UK cities. Door-to-door service, professional drivers, and no hidden fees.</p>
             <div className="btn-group" style={{ justifyContent: 'center' }}>
               <Link href="/book-now/" className="btn btn--primary btn--lg" id="city-book-now">Get a Quote</Link>
-              <a href="tel:+447700900000" className="btn btn--secondary btn--lg">📞 Call Now</a>
+              
             </div>
           </div>
         </div>

@@ -37,7 +37,7 @@ export default function CrossBorderTransfersPage() {
             <p>Door-to-door cross-border taxi transfers from any UK city to France, Belgium, Netherlands, and beyond. Fixed prices, experienced international drivers.</p>
             <div className="btn-group" style={{ justifyContent: 'center' }}>
               <Link href="/book-now/" className="btn btn--primary btn--lg" id="crossborder-book-now">Get a Cross-Border Quote</Link>
-              <a href="tel:+447700900000" className="btn btn--secondary btn--lg">📞 Call Now</a>
+              
             </div>
           </div>
         </div>

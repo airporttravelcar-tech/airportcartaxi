@@ -49,7 +49,7 @@ export default function LutonAirportTaxiPage() {
             <p>Reliable, fixed-price taxi transfers to and from London Luton Airport. Free flight tracking, meet & greet, and 24/7 service included.</p>
             <div className="btn-group">
               <Link href="/book-now/" className="btn btn--primary btn--lg" id="luton-book-now">Book Luton Taxi</Link>
-              <a href="tel:+447700900000" className="btn btn--secondary btn--lg">📞 Call Now</a>
+              
             </div>
             <div className={styles.trustRow}>
               {['✓ All areas covered', '✓ Free wait time', '✓ Flight tracking', '✓ Fixed price'].map(t => (

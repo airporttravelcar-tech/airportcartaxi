@@ -5,9 +5,7 @@
 export const COMPANY = {
   name: 'Airport Car Taxi',
   tagline: 'Reliable Airport Transfers Across the UK',
-  phone: '+44 7700 900000',
-  email: 'info@airportcartaxi.co.uk',
-  whatsapp: '+447700900000',
+  email: 'airporttravelcar@gmail.com',
   address: 'London, United Kingdom',
   googleRating: 4.9,
   reviewCount: 1847,

@@ -51,9 +51,7 @@ export default function Footer() {
             <Link href="/book-now/" className="btn btn--primary btn--lg" id="footer-book-now">
               🚖 Book Now
             </Link>
-            <a href="tel:+447700900000" className={`btn btn--secondary btn--lg`} id="footer-call">
-              📞 Call Us
-            </a>
+            
           </div>
         </div>
       </div>
@@ -86,9 +84,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className={styles.socials}>
-                <a href={`https://wa.me/${COMPANY.whatsapp}`} className={styles.socialBtn} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                  💬 WhatsApp
-                </a>
+                
                 <a href={`mailto:${COMPANY.email}`} className={styles.socialBtn} aria-label="Email us">
                   ✉️ Email
                 </a>
@@ -139,15 +135,10 @@ export default function Footer() {
               </ul>
               <h3 className={styles.colTitle} style={{ marginTop: '1.5rem' }}>Contact</h3>
               <div className={styles.contactList}>
-                <a href={`tel:${COMPANY.phone}`} className={styles.contactItem}>
-                  📞 <span>{COMPANY.phone}</span>
-                </a>
                 <a href={`mailto:${COMPANY.email}`} className={styles.contactItem}>
                   ✉️ <span>{COMPANY.email}</span>
                 </a>
-                <a href={`https://wa.me/${COMPANY.whatsapp}`} className={styles.contactItem} target="_blank" rel="noopener noreferrer">
-                  💬 <span>WhatsApp Booking</span>
-                </a>
+                
                 <div className={styles.contactItem}>
                   📍 <span>Serving all UK airports</span>
                 </div>

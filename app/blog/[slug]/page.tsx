@@ -55,7 +55,7 @@ const defaultContent = {
     { h2: 'Choosing the Right Vehicle', body: 'For solo travellers or couples, a Standard Saloon is perfect and the most economical choice. Families with children and luggage will appreciate our spacious MPV 6-Seaters. Business travellers often prefer our Executive Cars with complimentary Wi-Fi and refreshments. For larger groups, our Minibuses and Minivans provide comfortable, cost-effective travel.' },
   ],
   faqs: [
-    { q: 'How do I book an airport taxi?', a: 'You can book online through our booking form, by phone at +44 7700 900000, or via WhatsApp. Booking takes under 2 minutes and you will receive instant confirmation.' },
+    { q: 'How do I book an airport taxi?', a: 'You can book online through our booking form, or via email. Booking takes under 2 minutes and you will receive instant confirmation.' },
     { q: 'Are prices fixed?', a: 'Yes. All our prices are fully fixed from the moment you confirm your booking. No hidden charges, no meter, no traffic surcharges.' },
   ],
 };

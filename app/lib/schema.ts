@@ -7,7 +7,7 @@ export function localBusinessSchema() {
     name: COMPANY.name,
     description: 'Professional airport taxi and private transfer service across the UK. Fixed prices, 24/7 availability, and flight monitoring.',
     url: 'https://www.airportcartaxi.co.uk',
-    telephone: COMPANY.phone,
+    
     email: COMPANY.email,
     address: {
       '@type': 'PostalAddress',
@@ -50,7 +50,7 @@ export function taxiServiceSchema(serviceArea?: string) {
     provider: {
       '@type': 'LocalBusiness',
       name: COMPANY.name,
-      telephone: COMPANY.phone,
+      
     },
     areaServed: serviceArea || 'United Kingdom',
     description: 'Professional, fixed-price airport taxi and private transfer services across the UK.',

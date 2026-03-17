@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const bookFaqs = [
   { q: 'How quickly will I receive booking confirmation?', a: 'You will receive an instant email confirmation within seconds of completing your booking. A driver will also be assigned and their details sent to you.' },
-  { q: 'Can I cancel or change my booking?', a: 'Yes, you can cancel free of charge up to 24 hours before your journey. Changes can be made by contacting us by phone or WhatsApp.' },
+  { q: 'Can I cancel or change my booking?', a: 'Yes, you can cancel free of charge up to 24 hours before your journey. Changes can be made by contacting us by email.' },
   { q: 'What payment methods do you accept?', a: 'We accept all major credit and debit cards (Visa, Mastercard, Amex), PayPal, bank transfer, and cash payments to the driver.' },
   { q: 'Can I book for someone else?', a: 'Yes, you can book a taxi for another person. Simply enter their name in the passenger name field and ensure their pickup location is correct.' },
 ];
@@ -47,17 +47,12 @@ export default function BookNowPage() {
               <div className={styles.infoBox}>
                 <h3>📞 Need Help Booking?</h3>
                 <p>Call us any time and we will arrange everything for you.</p>
-                <a href="tel:+447700900000" className="btn btn--dark btn--lg" style={{ width: '100%', justifyContent: 'center' }}>
-                  📞 +44 7700 900000
-                </a>
+                
               </div>
               <div className={styles.infoBox}>
                 <h3>💬 WhatsApp Booking</h3>
                 <p>Prefer WhatsApp? Message us directly and we will handle your booking.</p>
-                <a href="https://wa.me/447700900000?text=Hi, I'd like to book a taxi" target="_blank" rel="noopener noreferrer"
-                  className="btn btn--primary btn--lg" style={{ width: '100%', justifyContent: 'center', background: '#25D366', boxShadow: '0 4px 15px rgba(37,211,102,0.3)' }}>
-                  💬 WhatsApp Us
-                </a>
+                
               </div>
               <div className={styles.featureList}>
                 <h3>What's Included</h3>

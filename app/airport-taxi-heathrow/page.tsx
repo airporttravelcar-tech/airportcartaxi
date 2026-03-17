@@ -59,7 +59,7 @@ export default function HeathrowAirportTaxiPage() {
             <p>Fixed-price, professional taxi transfers to and from Heathrow Airport. All terminals covered. Free flight tracking. Meet & greet included.</p>
             <div className="btn-group">
               <Link href="/book-now/" className="btn btn--primary btn--lg" id="heathrow-book-now">Book Heathrow Taxi</Link>
-              <a href="tel:+447700900000" className="btn btn--secondary btn--lg">📞 Call Now</a>
+              
             </div>
             <div className={styles.trustRow}>
               {['✓ All terminals', '✓ 60 min free wait', '✓ Flight tracking', '✓ Fixed price'].map(t => (
@@ -116,7 +116,7 @@ export default function HeathrowAirportTaxiPage() {
               { icon: '💷', title: 'Fixed Prices', desc: 'No meters, no surge pricing. The price you see is the price you pay.' },
               { icon: '🚗', title: 'Premium Fleet', desc: 'Modern, clean vehicles from standard saloons to luxury chauffeur cars.' },
               { icon: '🕐', title: '24/7 Service', desc: 'Available 365 days a year, including Christmas, New Year, and Bank Holidays.' },
-              { icon: '📱', title: 'Easy Booking', desc: 'Book online, by phone, or via WhatsApp. Instant confirmation every time.' },
+              { icon: '📱', title: 'Easy Booking', desc: 'Book online or via email. Instant confirmation every time.' },
             ].map((f) => (
               <div key={f.title} className={styles.featureCard}>
                 <span className={styles.featureIcon}>{f.icon}</span>

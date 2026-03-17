@@ -37,7 +37,7 @@ export default function LongDistanceTaxiPage() {
             <p>Comfortable, fixed-price long distance taxi transfers anywhere in the UK. Professional drivers, modern vehicles, and no journey is too far.</p>
             <div className="btn-group" style={{ justifyContent: 'center' }}>
               <Link href="/book-now/" className="btn btn--primary btn--lg" id="longdistance-book-now">Get a Long Distance Quote</Link>
-              <a href="tel:+447700900000" className="btn btn--secondary btn--lg">📞 Call Now</a>
+              
             </div>
           </div>
         </div>

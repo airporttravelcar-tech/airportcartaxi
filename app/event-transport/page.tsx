@@ -37,7 +37,7 @@ export default function EventTransportPage() {
             <p>Professional transport to concerts, sporting events, corporate functions, and every occasion in between. Group vehicles available for any size party.</p>
             <div className="btn-group" style={{ justifyContent: 'center' }}>
               <Link href="/book-now/" className="btn btn--primary btn--lg" id="event-book-now">Book Event Transport</Link>
-              <a href="tel:+447700900000" className="btn btn--secondary btn--lg">📞 Call Now</a>
+              
             </div>
           </div>
         </div>

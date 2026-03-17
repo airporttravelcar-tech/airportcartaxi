@@ -49,7 +49,7 @@ export default function BirminghamAirportTaxiPage() {
             <p>Professional, fixed-price taxi transfers to and from Birmingham Airport (BHX). Free flight tracking and meet & greet at all terminals.</p>
             <div className="btn-group">
               <Link href="/book-now/" className="btn btn--primary btn--lg" id="birmingham-book-now">Book Birmingham Taxi</Link>
-              <a href="tel:+447700900000" className="btn btn--secondary btn--lg">📞 Call Now</a>
+              
             </div>
             <div className={styles.trustRow}>
               {['✓ Meet & greet', '✓ Free wait time', '✓ Flight tracking', '✓ Fixed price'].map(t => (

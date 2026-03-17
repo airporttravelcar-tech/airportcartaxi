@@ -49,7 +49,7 @@ export default function StanstedAirportTaxiPage() {
             <p>Fixed-price taxi transfers to and from London Stansted Airport. Free flight tracking, 24/7 service, and professional drivers included.</p>
             <div className="btn-group">
               <Link href="/book-now/" className="btn btn--primary btn--lg" id="stansted-book-now">Book Stansted Taxi</Link>
-              <a href="tel:+447700900000" className="btn btn--secondary btn--lg">📞 Call Now</a>
+              
             </div>
             <div className={styles.trustRow}>
               {['✓ 60 min free wait', '✓ Flight tracking', '✓ Meet & greet', '✓ Fixed price'].map(t => (
