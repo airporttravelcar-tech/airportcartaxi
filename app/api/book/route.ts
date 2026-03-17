@@ -3,14 +3,14 @@ import { createClient } from '@supabase/supabase-js';
 import { Resend } from 'resend';
 import { v4 as uuidv4 } from 'uuid';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY!; // use service role key for backend operations
-const supabase = createClient(supabaseUrl, supabaseKey);
-
-const resend = new Resend(process.env.RESEND_API_KEY!);
-
 export async function POST(request: Request) {
   try {
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+    const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || ''; 
+    const supabase = createClient(supabaseUrl, supabaseKey);
+
+    const resend = new Resend(process.env.RESEND_API_KEY || '');
+
     const data = await request.json();
     const id = uuidv4();
 
